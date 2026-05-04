@@ -31,6 +31,9 @@ manifest:
 
     - name: zzeneg # <-- new entry
       url-base: https://github.com/zzeneg
+
+zmk-raw-hid
+
       
   projects:
   #  - name: zmk                                      # ORIGINAL
@@ -98,6 +101,9 @@ manifest:
     - name: zmk-raw-hid # <-- new entry
       remote: zzeneg
       revision: main   
+    - name: zmk-layer-hid        # <-- new entry
+      remote: doctormachete
+      revision: main
       
   self:
     path: config
