@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/urob             
     - name: dhruvinsh                                # TRI-STATE
       url-base: https://github.com/dhruvinsh
-    - name: ssbb                                     # ZMK LISTENERS
-      url-base: https://github.com/ssbb
+#    - name: ssbb                                     # ZMK LISTENERS
+#      url-base: https://github.com/ssbb
     - name: rafaelromao                              # LAYER MORPH
       url-base: https://github.com/rafaelromao             
 
@@ -56,17 +56,16 @@ manifest:
       revision: v0.3 # Should match ZMK release, using v0.3 instead of main just in case it breaks later on
       
     - name: zmk-listeners
-      remote: ssbb
-      revision: v1
+      remote: doctormachete
+      revision: main
       
     - name: zmk-layer-morph
       remote: rafaelromao
       revision: v0.3 # set to same as ZMK version above
 
 #    - name: zmk-feature-appcompanion         
-#      remote: doctormachete         # original from maatthc, now a fork so it can be modified
+#      remote: doctormachete
 #      revision: main      
-
 
 #    - name: zmk-output-behavior-listener     # BEHAVIORAL LISTENER, NOT TESTED
 #      remote: badjeff                        # BEHAVIORAL LISTENER, NOT TESTED
@@ -75,8 +74,8 @@ manifest:
 #      remote: badjeff                        # BEHAVIORAL LISTENER, NOT TESTED AND NOT SURE IF IT'S NEEDED AT ALL
 #      revision: main                         # BEHAVIORAL LISTENER, NOT TESTED AND NOT SURE IF IT'S NEEDED AT ALL
     - name: zmk-behavior-force-case          # ← ADD THIS
-      remote: doctormachete                        # ← 
-      revision: main                          # ←
+      remote: doctormachete                    # ← 
+      revision: main                          # main basic
 
 #    - name: prospector-zmk-module           
 #      remote: prospector
@@ -87,11 +86,10 @@ manifest:
       remote: doctormachete
       revision: v2.0.0  # Use v2.0.0 for ZMK ≤0.3 (Zephyr 3.x)
       path: modules/prospector-zmk-module
-      
 
 #    - name: zmk-layer-hid         # <-- add this project
 #      remote: doctormachete
 #      revision: main
-   
+      
   self:
     path: config
