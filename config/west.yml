@@ -92,11 +92,6 @@ manifest:
       revision: v2.0.0  # Use v2.0.0 for ZMK ≤0.3 (Zephyr 3.x)
       path: modules/prospector-zmk-module
 
-#    - name: zmk-layer-hid         # <-- add this project
-#      remote: doctormachete
-#      revision: main
-
-
     - name: zmk-raw-hid # <-- new entry
       remote: zzeneg
       revision: main   
