@@ -29,8 +29,8 @@ manifest:
 #    - name: doctormachete          # <-- add this remote
 #      url-base: https://github.com/DoctorMachete
 
-    - name: zzeneg # <-- new entry
-      url-base: https://github.com/zzeneg
+#    - name: zzeneg # <-- new entry
+#      url-base: https://github.com/zzeneg
 
 
       
@@ -93,7 +93,7 @@ manifest:
       path: modules/prospector-zmk-module
 
     - name: zmk-raw-hid # <-- new entry
-      remote: zzeneg
+      remote: doctormachete
       revision: main   
     - name: zmk-layer-hid        # <-- new entry
       remote: doctormachete
