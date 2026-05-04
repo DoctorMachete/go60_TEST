@@ -32,7 +32,6 @@ manifest:
     - name: zzeneg # <-- new entry
       url-base: https://github.com/zzeneg
 
-zmk-raw-hid
 
       
   projects:
