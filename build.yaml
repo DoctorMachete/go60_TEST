@@ -1,10 +1,12 @@
 # This file generates the GitHub Actions matrix
 include:
   - board: go60_lh
+    shield: go60_lh raw_hid_adapter   # ← add raw_hid_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: go60_left_studio
   - board: go60_rh
+    shield: go60_rh raw_hid_adapter   # ← add raw_hid_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: go60_right_studio
