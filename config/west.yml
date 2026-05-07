@@ -20,8 +20,8 @@ manifest:
 #    - name: maatthc                                  # APP COMPANION TO OUTPUT HID
 #      url-base: https://github.com/maatthc
 
-    - name: doctormachete                          # ← ADD THIS
-      url-base: https://github.com/DoctorMachete
+#    - name: doctormachete                          # ← ADD THIS
+#      url-base: https://github.com/DoctorMachete
 
 #    - name: prospector
 #      url-base: https://github.com/t-ogura
@@ -29,8 +29,8 @@ manifest:
 #    - name: doctormachete          # <-- add this remote
 #      url-base: https://github.com/DoctorMachete
 
-#    - name: zzeneg # <-- new entry
-#      url-base: https://github.com/zzeneg
+    - name: zzeneg # <-- new entry
+      url-base: https://github.com/zzeneg
     - name: srwi # <-- required for this module
       url-base: https://github.com/srwi
 
@@ -93,12 +93,9 @@ manifest:
       revision: v2.0.0  # Use v2.0.0 for ZMK ≤0.3 (Zephyr 3.x)
       path: modules/prospector-zmk-module
 
-    - name: zmk-raw-hid # <-- new entry
-      remote: doctormachete
+    - name: zmk-raw-hid
+      remote: zzeneg        # ← was doctormachete
       revision: main
-#    - name: zmk-layer-hid        # <-- new entry
-#      remote: doctormachete
-#      revision: main
     - name: zmk-keypeek-layer-notifier # <-- this module
       remote: srwi
       revision: main
