@@ -1,2 +1,10 @@
 # This file generates the GitHub Actions matrix
-board: [ "go60_lh", "go60_rh" ]
+include:
+  - board: go60_lh
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: go60_left_studio
+  - board: go60_rh
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: go60_right_studio
