@@ -12,10 +12,15 @@ manifest:
       url-base: https://github.com/rafaelromao             
 
 
+    - name: doctormachete
+      url-base: https://github.com/DoctorMachete
+
     - name: zzeneg # <-- new entry
       url-base: https://github.com/zzeneg
     - name: srwi # <-- required for this module
       url-base: https://github.com/srwi
+
+      
 
       
   projects:
