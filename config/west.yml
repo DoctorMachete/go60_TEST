@@ -31,7 +31,8 @@ manifest:
 
 #    - name: zzeneg # <-- new entry
 #      url-base: https://github.com/zzeneg
-
+    - name: srwi # <-- required for this module
+      url-base: https://github.com/srwi
 
       
   projects:
@@ -94,10 +95,14 @@ manifest:
 
     - name: zmk-raw-hid # <-- new entry
       remote: doctormachete
-      revision: main   
-    - name: zmk-layer-hid        # <-- new entry
-      remote: doctormachete
       revision: main
+#    - name: zmk-layer-hid        # <-- new entry
+#      remote: doctormachete
+#      revision: main
+    - name: zmk-keypeek-layer-notifier # <-- this module
+      remote: srwi
+      revision: main
+
       
   self:
     path: config
