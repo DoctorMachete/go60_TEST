@@ -71,7 +71,7 @@ manifest:
       revision: main
     - name: zmk-keypeek-layer-notifier # <-- this module
       remote: srwi
-      revision: main
+      revision: master
 
       
   self:
