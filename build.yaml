@@ -4,8 +4,8 @@ include:
     shield: raw_hid_adapter      # ← only here
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: go60_left_studio
+    artifact-name: go60_left_peek
   - board: go60_rh
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: go60_right_studio
+    artifact-name: go60_right_peek
